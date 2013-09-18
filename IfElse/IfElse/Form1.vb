@@ -9,11 +9,16 @@ Public Class Form1
         num1 = CDbl(txtFirstNum.Text)
         num1 = CDbl(txtSecondNum.Text)
         If (num1 > num2) Then
+            txtResult.Text = "the larger number is" & num1
             largerNum = num1
-        Else
+        ElseIf (num1 < num2) Then
             largeNum = num2
+            txtResult.Text = "The larger number is" & num2
+
+        Else
+            txtResult.Text = "they are equal"
 
         End If
-        txtResult.Text = "The larger number is" & largerNum
+
     End Sub
 End Class
